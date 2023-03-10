@@ -8,6 +8,16 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+
+    <link href="./styles.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
@@ -16,158 +26,338 @@
         <span class="navbar-text">SAURAV K SINGH</span>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="#">About</a>
+            <a class="nav-link active" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Experience</a>
+            <a class="nav-link" href="#education">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Me</a>
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
           </li>
         </ul>
       </div>
     </nav>
-    <main class=" w-75 mx-auto mb-5  p-3">
-      
-   
-
-    <div class="container">
-      <div class="row align-items-start mt-4">
-        <div class="col-md-5">
-          <p class="fw-light fs-5" style="text-align: justify;">
-            Hi, I'm Saurav I am a highly experienced full-stack developer with a
-            strong background in building serverless web and mobile applications
-            using AWS. My expertise in AWS micro-services allows me to create
-            efficient, scalable, and cost-effective solutions. In addition to my
-            AWS skills, I am also well-versed in data structures and algorithms,
-            and have a good hands-on experience in it. Currently pursuing an MS
-            at Portland State University, I am seeking new opportunities to work
-            on challenging projects and continue to grow my skills as a
-            developer.
-          </p>
-        </div>
-        <div class="col-md-7">
-          <img style="display: block;
-          height: 350px;
-          object-fit: cover;
-          width: 100%;
-          margin: 0 auto;" src="./assets/about.jpg"  class="img rounded" alt="Casual Profile picture of Saurav" />
-        </div>
-     
-        </div>
-    
-        <div class="row  mt-4">
-          <p class="fs-4 fw-bold bg-light">Projects</p>
-          <div class="col-md-4">
-            <p>PPE Detector Tool</p>
-            <p>Tech Stack - Python, React, AWS Amplify, AWS Rekognition</p>
-            <p>PPE (Personal Protective Equipment) web app can detect the PPE equipment used by employees in the workplace to ensure safety regulations thereby reducing human and financial risk. The app uses Amazon Rekognition to detect the PPE equipment and user can further raise timely alarms to alert the employees.</p>
-            <button class="btn btn-primary">
-              TRY NOW
-            </button>
-          </div>
-          <div class="col-md-4">
-            <p>Face Search iOS App</p>
-            <p>Tech Stack – Python, React, React Native, AWS Microservices, JavaScript</p>
-            <p>● Developed a face search iOS app where audiences can search for their pictures from events/collections in just a few clicks using Amazon Rekogniton (Face AI).
-
-              ● Deployed Elastic search for searching images in milliseconds and used serverless GraphQL API for real-time data query & chaining lambda functions for various asynchronous operations.</p>
-              <button class="btn btn-primary">
-                TRY NOW
-              </button>
+    <main class="w-75 mx-auto mb-5 p-3">
+      <div class="container">
+        <section id="about">
+          <div class="row align-items-start mt-4">
+            <div class="col-md-5">
+              <p class="fw-light fs-6" style="text-align: justify">
+                Hi, I'm Saurav I am a highly experienced full-stack developer
+                with a strong background in building serverless web and mobile
+                applications using AWS. My expertise in AWS micro-services
+                allows me to create efficient, scalable, and cost-effective
+                solutions. In addition to my AWS skills, I am also well-versed
+                in data structures and algorithms, and have a good hands-on
+                experience in it. Currently pursuing an MS at Portland State
+                University, I am seeking new opportunities to work on
+                challenging projects and continue to grow my skills as a
+                developer.
+              </p>
             </div>
-          <div class="col-md-4">
-            <p>Analytics on 120 Years of Olympics Data</p>
-            <p>Tech Stack – PostgreSQL, Python, PowerBI</p>
-            <p>Recently conducted an analysis of 120 years of Olympic data using PostgreSQL and PowerBI to uncover useful insights. The analysis included the use of complex SQL queries to extract and manipulate the data, providing a thorough examination of the information. The results of the analysis may provide valuable insights into the history and trends of the Olympic games.</p>
-            <button class="btn btn-primary">
-              CHECK QUERIES
-            </button>
-            <button class="btn btn-primary">
-              CHECK VISUALIZATION
-            </button>
-          </div>
-          </div>
-      <div class="row mt-4">
-        <p class="fs-3">Education</p>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-7">
               <img
-              style="width: 100%;"
+                style="
+                  display: block;
+                  height: 350px;
+                  object-fit: cover;
+                  width: 100%;
+                  margin: 0 auto;
+                "
+                src="./assets/about.jpg"
                 class="img rounded"
-                src="data:image/jpeg;base64,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"
+                alt="Casual Profile picture of Saurav"
               />
-            </div>
-            <div class="col-md-8">
-              <p class="fs-5">Portland State University</p>
-              <p class="fw-light">Master in Computer Science</p>
-              <p class="fw-light">Sep 22 - Mar 24</p>
-              <p class="fw-light">GPA - 3.89 / 4.00</p>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="row align-items-stretch">
-            <div class="col-md-4">
-              <img
-              style="width: 100%;"
-                class="img rounded"
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Birsa_Institute_of_Technology_Sindri_logo.png/180px-Birsa_Institute_of_Technology_Sindri_logo.png"
-              />
+        </section>
+        <section id="projects">
+          <div class="row my-4">
+            <nav class="navbar my-3" style="background-color: #e3f2fd">
+              <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Projects</span>
+              </div>
+            </nav>
+
+            <div class="col-md-6">
+              <div class="card text-white bg-secondary mb-3">
+                <div class="card-header">PPE Detector Tool</div>
+                <div class="card-body">
+                  <p class="card-text fw-bold">
+                    Tech Stack - Python, React, AWS Amplify, AWS Rekognition.
+                  </p>
+                  <p style="text-align: justify">
+                    PPE (Personal Protective Equipment) web app can detect the
+                    PPE equipment used by employees in the workplace to ensure
+                    safety regulations thereby reducing human and financial
+                    risk. The app uses Amazon Rekognition to detect the PPE
+                    equipment and user can further raise timely alarms to alert
+                    the employees.
+                  </p>
+                  <button class="btn btn-light">TRY NOW</button>
+                </div>
+              </div>
             </div>
-            <div class="col-md-8">
-              <p class="fs-5">B. I. T. Sindri</p>
-              <p class="fw-light">B. Tech in Computer Science</p>
-              <p class="fw-light">Aug 16 - May 20</p>
-              <p class="fw-light">GPA - 3.67 / 4.00</p>
+            <div class="col-md-6">
+              <div class="card text-white bg-secondary mb-3">
+                <div class="card-header">
+                  Analytics on 120 Years of Olympics Data
+                </div>
+                <div class="card-body">
+                  <p class="card-text fw-bold">
+                    Tech Stack – PostgreSQL, Python, PowerBI
+                  </p>
+                  <p class="card-text" style="text-align: justify">
+                    Recently conducted an analysis of 120 years of Olympic data
+                    using PostgreSQL and PowerBI to uncover useful insights. The
+                    analysis included the use of complex SQL queries to extract
+                    and manipulate the data, providing a thorough examination of
+                    the information. The results of the analysis may provide
+                    valuable insights into the history and trends of the Olympic
+                    games.
+                  </p>
+                  <button class="btn btn-light m-1">CHECK QUERIES</button>
+                  <button class="btn btn-light m-1">CHECK VISUALIZATION</button>
+                </div>
+              </div>
             </div>
+          </div>
+        </section>
+        <section id="education">
+          <div class="row my-4">
+            <nav class="navbar my-3" style="background-color: #e3f2fd">
+              <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Education</span>
+              </div>
+            </nav>
+            <div class="col-md-6">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div
+                    class="col-md-4 p-2 d-flex align-items-center justify-content-center"
+                  >
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Birsa_Institute_of_Technology_Sindri_logo.png/180px-Birsa_Institute_of_Technology_Sindri_logo.png"
+                      class="img-fluid rounded-start"
+                      style="height: 8rem"
+                      alt="BIT Sindri Logo"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">B.I.T. Sindri</h5>
+                      <p class="card-text m-0 p-0">
+                        B. Tech in Computer Science
+                      </p>
+                      <p class="card-text m-0 p-0">Aug 2016 - May 2020</p>
+                      <p class="card-text">GPA - 3.67 / 4.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div
+                    class="col-md-4 p-2 d-flex align-items-center justify-content-center"
+                  >
+                    <img
+                      src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQERIQEBIVFRUWGBgSEhUWFhYREhMaFRUXFxUVFxcYHSggGB0lHRUVITEtJSotLi4uFyAzODYtNygtLysBCgoKDg0OGxAQGy0mHSU3LS0tKy8uLS03LS0tNS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tNS0tLS0tLS0tKy0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABgcCBAUBA//EAEMQAAIBAgIECQgHCAIDAAAAAAABAgMEBhEFITFBBxIiUWFxgZGxEzI0UnKSodEUFkJTc5OyFSMzVGKCwdKi8Bck4v/EABkBAQADAQEAAAAAAAAAAAAAAAABAgMFBP/EAC4RAQACAQMCBAQFBQAAAAAAAAABAgMEERIhMRNBUaEUUmGBBRUiM0IyNHGR8P/aAAwDAQACEQMRAD8AvEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPMw2RLFmLlbt0aGUqv2pbY0/nL/vQZ5MlcdeVjfZJby/pUVxqs4wX9Tyz6uc4Nxjqyi8k5z9mGr/k0VldXNSrJzqSc5Pe3m+roR8jm3/ELfxhTktClj2yb1+Uj0uGr/i2dvR+lqFws6NSM+dJ8pdcXrRShlTm4tSi2mtaaeTXU1sIpr77/qg5L2zPSA4Vxm240bt7clCrs6lP59/OT1SOlizVyV3qtE7vQAapAAAAAAAAAAAAAAAAAAAAAAAAAABwsXaZ+iUHKP8AEm+JT6Hvl2L/AAVJKTbbbzb1tvW23tZKeEW8c7pU91OKXbLlP4cXuOBomydxWp0V9uSTfMtsn2JM4mrvOTLxjy6KW6y6uGcL1Lzlt8Sknk5b5c6iv8k9scLWVJZKjGT55/vG+/Uuw6trQhShGEFxYxWSXMkQTTuO6nHcLVRUVq8o1xnLpitiXWeyMeHT1ibd07RCV3WHLOosnQp9cVxH3xyIZiXBcqMXVt25wWuUHrnFc69ZfHrMNG48uYSXl1GpHfkuJNdKy1Fi2dzCtTjUg84ySkn1+BMRg1ETER1OkqOLJwBpt1qboVHnOmlxW9sobutp6u1EUxpotW1y1BZQmvKRW5ZtqUV2r4nwwpeOjd0ZbnLycuqfJ8Wn2Hhw2nDm2n/CsdJXEADuNAAAAAAAAAAAAAAAAAAAAAAAAAAAU/jF531x7S/TE2uD+Kd7DojNr3cv8s1MYem3HtL9MTc4PfTY+xPwRw6/3P3Z/wAlh4iqONpcSi8mqU2nzcl6ymC5cT+h3P4U/wBLKhsbSdapGlDLjSeSzeS2Z7ew218b3rCbPgWnweqX0KOezjT4vVxvnxiO6MwDWlNfSJxjDeovjTfRsyXx6iwaFGNKEYRSjGKSS3JJF9HgvS02t0Kxsg3Cg1xrfnyn3ZxIZZyyqU3zSi+6SOrjDSqubmUovOEF5OD50tbfa2+zI5Ft58PaXijx57xbLMwie69QAd9oAAAAAAAAAAAAAAAAAAAAfG6uYUoSqTkoxis5N7EiJnYfVs5WkcRWlB5VK0eN6sc5y7o55dpA8R4wq3DcKLdOls1apz6W9y6F2kYOdl18RO1P9qzZZ0sfWaepVX0qKy+MjH6/2nq1vdj/ALFZg8/x2X6K8pb+nryNe4q1oZ8Wcs1nqexLX3HV4PfTY+xPwRGyScHvpsfYn4Iyw25ZomfVEd1g4n9Dufwp/pZV2GK8ad3QnOSjFSzbbyS5L2stHE/odz+FP9LKaPVrrcclZWt3W9c4psYLN14vojnN/AheJcYzuIulRTp03qk3/EmubV5q8SKgwy6zJeNuyJtMhnRllKLe5p9zTMAeXdVZn1/tPVre7H/Y9+v9p6tX3Y/7FZA9nx2X6LcpW5Y4ssqryVZRfNNOHxer4nbjJPWiiDs6CxJXtGlGXGp76cnq/tf2X1dxti1/leExZcANDRGlaV1TVWk9Wxp6pRe+MluN86cTExvC4ACQAAAAAAAAAAHjK14QNNOpV+jQfIpvl5fanzdS8c+YsO/r+Tp1KnqxlLuWZSFSo5Nyk83JuTfO3rZz9fkmtYrHmraSnByajFNtvJJa229iRPNAYFjkp3bbe3ycXkl0Sa1t9WXaa3BxopTnO5ms+JyKftNZyl2JpdpMtO6XhaUnVnr3RitTnJ7EjLS6esU8S6KxHcpaBtIrJW9L3E/izL9i2v3FL3I/Iru4xxeSk3Fwgt0VHjd7e0+f10vvvI+5E1+Mwx5eyeUPljShCneVYwioxShkopJLOEdyNjg99Nj7E/BHE0hfVLio6tV5yllm0ktiyWpdCR18C1o07tTnJRjGE229SWpHhpaJz8o7bq+axcT+h3P4U/0spolWKsWyuM6VDONLZJ7JVOvmj0b/AIEXhByaUU23qSWtt8yRfWZK5LxxLTuxJLh/CFa5SqVG6dN602uXNf0p7F0s7uFsGKHFrXSTltjT2xj0y530bOsl93dU6MHUqSUYx2t7EbYNH05ZExX1cqwwnZUl/CU3vdTlt9j1LsRu/sa1+4pe5H5EM0vj6bbjbQSj689cn0qO7tzOV9dL77yPuRNZ1OCvSI9k7wsj9jWv8vS9yPyPJaEtGsnb0vcj8iuPrpffeR9yJlDG18nm5wfQ4LJ9w+Mw+nscoSjTOBreonKh+6nuW2m+tPWuzuK7vrOpQnKlVi4yjtX+U96LSwtiON7FxceJUj50c800/tR6PA0uELRSqUPLpculrb54N60+rb3lM+CmSniYyYieqF4X0y7SspN/u5ZRqro3S61t7+ct+Dz1lEFuYKu3Vs6Te2KdN/2PJfDIjQZZ60lFZd0AHUXAAAAAAAAAABzMTeh3P4VT9LKZLxv7dVac6b+3GUPeWRSE4OLcZLJptNczWpo5X4jHWsqWWfwd5fQ45bePPPrz+WRyOFDjZ2/q8vv5P+D5cG+lVCU7aby4/Lp+1llKPakn2MmOndEU7yk6U9W+EltjLn6TaseLpuNU94UyCS3OB72MmoxjNbpKaj8JZM+X1Lv/ALpfmQ+ZzZwZfllTaUfBIPqXf/dL8yHzNzR+A7mb/fONOO/Wpz7EtXeyY0+WZ24ybSjmj7CrcTVOlHjSfYkudvcizsNYXp2i40sp1Xtnl5vRHPZ17WdHQ+iKNrDiUo5b5SeuUnzt/wDUczE+KqdpyIZTrer9mHTP5beo6GLBTBHO/deI2dDTemqNpDj1Xr+zBZcab6FzdJV2ndOVryfGqPKK8yC82PzfSaV9eVK83UqycpPa34JbkdTDeG6t5LPzaSeUpvwit78Dy5c9888aR0/7urvMuICWY80bStlbUqUeKspt88nnHNye9kVpQcpKK2yait2tvJHnyY5pbiiY2YgkH1Lv/ul+ZD5mUME37aXk4rpc4ZLubZPgZPlk2l7wf8b6bDLZxZ8bq4vz4pYmIcvotxns8lUz9xmhhbDcbKLcmpVJapSWxL1Y9HiafCDpVUqHkE+XV1Zc0E+U+3Z38x0sdfBwTyX7QrMs/g39Ef4kvCJWBbeCbR0rOkntknUf97zXwyPLoInxN0Vd4AHZXAAAAAAAAAAB4yteEDQrpVfpMFyKj5eWyM//AK29efQWWfG7toVYSp1IqUZLKSexmGfDGWmyJjdR1Obi1KLaaeaa2prY0T7QOOoNKF3qls8olnGXtJa0+rUcTEmEats5TpJ1KW3Na5w6JJbV0ojRyK3y6e2ynWFz0tO2klmrij+ZFfBsz/bNr/MUfzIfMpUHo/MbeieS6v2za/zFH8yHzPhdYis6azlcU+qMlN90c2U4CJ/ELekHJNdO47lNOFqnBPU6j87+1bu0hcpNttvNvW29bfS2eA8mXLbJO9lZncLR4PF/6cfbn4lXFpcHnoUfbn4np0H7v2TXu4vCh59v7M/GJDtHtKtSb1JTg23qS5SJjwoefb+zPxiQcz1U7Zpkt3XV+2bX+Yo/mQ+Z5LTdqtbuKP5kPmUsDf8AMbeieSzdMY3t6SaoPys92Waprrlv7Cur+9qV6kqtWXGlLa9y5kluSNc6+gsO17triLiw31Jeb2eszDJlyZ529kTMyYX0M7uuoZPyccpVXzLmz53ll3vcXBCKWpalsXMjR0Noqla01SpLplJ+dJ75NnQOppsHhV+srxGwAD0pAAAAAAAAAAAAAHjORpHDdpXbdSlHjPbKPIk+trb2nYBW1It3gROWALTdKqujjJ+MTH6gWnr1fej/AKkuBl8Ni+WEbQpXT1nGhcVaMG3GDyWet7E9febeENH07i5VKqs48WTyza2LVrR5jD0249pfpibfB76bH2J+ByK1jx+O3TdTzSTTeE7Olb1qkKbUoU5Si+PJ5NRbW8rcuXE3odz+FP8ASymjXXUrW0RWNk2gLS4PPQo+3PxKtLS4PPQo+3PxGg/d+yKd3F4UPPt/Zn4xIVRjnKKe9pPtZNeFDz7f2Z+MSGWq5cPaj4oz1P70/Yt3WN/4/tPXq+9H/U9WALT16vvR/wBSWg6vw2L5YX2hwbHCNlSaapcZrfNufwer4HcgslkuwyBrWla/0wkABcAAAAAAAAAAAAAAAAAAAAAFUY+t3C9m901Ga7uK/jE0MM3yoXVGpJ5RUuLJ8yknFvszz7CccIeiXVoqvBZypZ5re4Pzu7U+rMrQ4eorOPNv92c9JXpVpRqRlGWtSTi1zprJr4lRacw9XtZtOMpU/sTSzTW7PLY+skmEMXxjGNvcvLLVTqPZlujPm69hOoSUlmmmnsa1pnutXHqqxMT1W6SpjRmiK9xJQpU5Pnk01CPS5bF4luaH0fG2oU6MXnxVk3ztvOT7W2bjWRFcT4wp0Yyp0JKdV6s1rhT6W9jfR3jHix6aJtM9SIiEZ4Qb9VbriReapRUH7TbcvFLsORoG3dW5oQW+cW+pPN/BM0ZSbbbebett6229rJvwcaJblK6ktS5FPpb8+XZs7XzHgpvmzbqx1lYIAO60AAAAAAAAAAAAAAAAAAAAAAAAAAB5KOeorPF+FJUJSrUFnSetxS10ufV6vgWaeNGObBXLXaUTG6hzYtb+tS/hVJw6IycV3Is3S+DbWu3JJ0pva4ZJPrjs7siOXHB5cL+HWpyX9XGh4KRyraPNSf0+ynGYRi50pcVVlUrVJLmcm13GoS+jwe3TfLq0kuhzm+5xR3tF4Et6TUqrdVrc+TD3Vt7WK6XNfv7nGZQ/DOG6l5JSecaSfKn63RDnfTuLWtbaNKEacElGKyiluSM6dNRSSSSWpJakupGZ08Gnrij6rxGwAD0JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//2Q=="
+                      class="img-fluid rounded-start"
+                      style="height: 8rem"
+                      alt="Portland State University Logo"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Portland State University</h5>
+                      <p class="card-text m-0 p-0">
+                        Master in Computer Science
+                      </p>
+                      <p class="card-text m-0 p-0">Sep 2022 - Mar 2024</p>
+                      <p class="card-text">GPA - 3.89 / 4.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="experience">
+          <div class="row my-4">
+            <nav class="navbar my-3" style="background-color: #e3f2fd">
+              <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Experience</span>
+              </div>
+            </nav>
+            <div class="col-md-6">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4 p-2 d-flex justify-content-center">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUVy1BRokQRcl6tFAU60KvX9ydhO6CXjL5-csFzlqZ&s"
+                      class="img-fluid rounded-start"
+                      style="height: 8rem"
+                      alt="Tata Steel Logo"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Tata Steel</h5>
+                      <p class="card-text m-0 p-0">Software Engineer</p>
+                      <p class="card-text">Sep 22 - Mar 24</p>
+                      <p class="card-text" style="text-align: justify">
+                        Spearheaded a team of 4 to build a tool using Google
+                        Vertex AI to read contracts & agreements and highlight
+                        critical information and phrases.
+                      </p>
+                      <p class="card-text" style="text-align: justify">
+                        Led Vendor Productivity Improvement Program to increase
+                        the productivity of the Vendor workforce from 56% to 72%
+                        by tracking (Gate Pass & Safety Pass) data using the
+                        Tableau dashboard.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4 p-2 d-flex justify-content-center">
+                    <img
+                      src="./assets/innovant_logo.png"
+                      class="img-fluid rounded-start"
+                      style="max-height: 3rem"
+                      alt="Tata Steel Logo"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Innovant Technologies</h5>
+                      <p class="card-text m-0 p-0">Full Stack Developer</p>
+                      <p class="card-text">Sep 22 - Mar 24</p>
+                      <p class="card-text" style="text-align: justify">
+                        Played a lead role in developing a serverless web app
+                        for legal invoicing solutions performing operations on
+                        2M+ records. Also, worked in parallel with the Data
+                        Science team to create Batch Jobs for ETL using AWS Glue
+                        and turned data into opportunity using Power BI.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="row mt-4">
+            <nav class="navbar my-3" style="background-color: #e3f2fd">
+              <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Contact Me</span>
+              </div>
+            </nav>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h2>Contact Form</h2>
+                  <form action="https://formspree.io/f/xdovdeal" method="post">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email:</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label">Message:</label>
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h2 class="card-title mb-4">Contact Information</h2>
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="bi bi-envelope-fill me-2 text-primary"></i>
+                      <span class="text-secondary">Email:</span>
+                      sauravkumar329@gmail.com
+                    </li>
+                    <li>
+                      <i class="bi bi-telephone-fill me-2 text-primary"></i>
+                      <span class="text-secondary">Phone:</span> 503 688 3191
+                    </li>
+                    <li>
+                      <i class="bi bi-geo-alt-fill me-2 text-primary"></i>
+                      <span class="text-secondary">Address:</span> 6616 NE
+                      Karlson Ct Hillsboro, OR
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="bg-success text-white">
+      <div class="container">
+        <div class="row pt-2">
+          <div class="col-md-6">
+            <p>&copy; 2023 Saurav</p>
+          </div>
+          <div class="col-md-6 text-right">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#about" class="text-white">Home</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#projects" class="text-white">Projects</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#education" class="text-white">Education</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#experience" class="text-white">Experience</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="row mt-4">
-        <p class="fs-3">Experience</p>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-4">
-              <img
-                class="img-fluid rounded"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUVy1BRokQRcl6tFAU60KvX9ydhO6CXjL5-csFzlqZ&s"
-              />
-            </div>
-            <div class="col-md-8">
-              <p class="fs-5">Tata Steel</p>
-              <p class="fw-light">Software Engineer</p>
-              <p class="fw-light">Sep 22 - Mar 24</p>
-              <p class="fw-light">Spearheaded a team of 4 to build a tool using Google Vertex AI to read contracts & agreements and highlight critical information and phrases.
-              <p class="fw-light">Led Vendor Productivity Improvement Program to increase the productivity of the Vendor workforce from 56% to 72% by tracking (Gate Pass & Safety Pass) data using the Tableau dashboard.</p>
-               </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-4">
-              <img
-                class="img-fluid rounded"
-                src="https://lh6.googleusercontent.com/4kxZfj18czjs-RDGRDGQ8K6OLGYSHgYbdJg3CRKdFVPFw3a67YACbPqYbQ0xh6iBrmzABkcRArW5iVL4464p9D8cTsV2k4mMPbSd_ghdlcGEktJFHHgTlg7qUi8VZ_Z2oA=w1280"              />
-            </div>
-            <div class="col-md-8">
-              <p class="fs-5">Innovant Technologies</p>
-              <p class="fw-light">Full Stack Developer</p>
-              <p class="fw-light">Sep 22 - Mar 24</p>
-              <p class="fw-light">Played a lead role in developing a serverless web app for legal invoicing solutions performing operations on 2M+ records. Also, worked in parallel with the Data Science team to create Batch Jobs for ETL using AWS Glue and turned data into opportunity using Power BI.    </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <p class="fs-3">Contact No</p>
-      </div>
-    </div>
-     </main>
+    </footer>
   </body>
 </html>

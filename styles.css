@@ -1,0 +1,8 @@
+.card-with-bg-image {
+  background-image: url("./assets/ppe-background.png"),
+    linear-gradient(to right, #6db3f2, #6db3f2);
+  /* background-image: url("./assets/ppe-background.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
