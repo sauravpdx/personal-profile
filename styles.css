@@ -5,3 +5,14 @@
 body {
   padding-top: 50px;
 }
+/* Default width for all devices */
+main {
+  width: 75%;
+}
+
+/* Width for small devices */
+@media (max-width: 576px) {
+  main {
+    width: 95%;
+  }
+}
