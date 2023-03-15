@@ -12,8 +12,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+
     <link href="./styles.css" rel="stylesheet" />
+    <link rel="icon" href="./assets/favicon.png" type="image/png" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
@@ -58,29 +61,25 @@
           <div class="row align-items-start mt-4">
             <div class="col-md-5">
               <p class="fw-light fs-6 text-justify">
-                Hi, I'm Saurav I am a highly experienced full-stack developer
-                with a strong background in building serverless web and mobile
-                applications using AWS. My expertise in AWS micro-services
-                allows me to create efficient, scalable, and cost-effective
-                solutions. In addition to my AWS skills, I am also well-versed
-                in data structures and algorithms, and have a good hands-on
-                experience in it. Currently pursuing an MS at Portland State
-                University, I am seeking new opportunities to work on
-                challenging projects and continue to grow my skills as a
-                developer.
+                <span style="font-size: 24px">Hi, I'm Saurav</span> <br />
+                I am a highly experienced full-stack developer with a strong
+                background in building serverless web and mobile applications
+                using AWS. My expertise in AWS micro-services allows me to
+                create efficient, scalable, and cost-effective solutions. In
+                addition to my AWS skills, I am also well-versed in data
+                structures and algorithms, and have a good hands-on experience
+                in it. Currently pursuing an MS at Portland State University, I
+                am seeking new opportunities to work on challenging projects and
+                continue to grow my skills as a developer.
               </p>
+              <div class="mt-3">
+                <span class="fa fa-search"></span>
+              </div>
             </div>
             <div class="col-md-7">
               <img
-                style="
-                  display: block;
-                  height: 350px;
-                  object-fit: cover;
-                  width: 100%;
-                  margin: 0 auto;
-                "
                 src="./assets/about.jpg"
-                class="img rounded"
+                class="img rounded about-img"
                 alt="Casual Profile picture of Saurav"
               />
             </div>
@@ -88,14 +87,12 @@
         </section>
         <section id="projects">
           <div class="row my-4">
-            <nav class="navbar my-3" style="background-color: #e3f2fd">
-              <div class="container-fluid">
-                <span class="navbar-brand mb-0 h1">Projects</span>
-              </div>
-            </nav>
+            <div class="section-heading">
+              <h2 class="section-title">Projects</h2>
+            </div>
 
             <div class="col-md-6">
-              <div class="card text-white bg-secondary mb-3">
+              <div class="card bg-light mb-3">
                 <div class="card-header">PPE Detector Tool</div>
                 <div class="card-body">
                   <p class="card-text fw-bold">
@@ -112,7 +109,7 @@
                   <a
                     href="https://main.dx26wen16nrwi.amplifyapp.com/"
                     target="_blank"
-                    class="btn btn-light"
+                    class="btn btn-main"
                   >
                     TRY NOW
                   </a>
@@ -120,7 +117,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="card text-white bg-secondary mb-3">
+              <div class="card bg-light mb-3">
                 <div class="card-header">
                   Analytics on 120 Years of Olympics Data
                 </div>
@@ -139,13 +136,13 @@
                   </p>
                   <a
                     href="https://drive.google.com/file/d/1yz1rC31MGoy3NuxbDiVHr5ikguYO_fAC/view"
-                    class="btn btn-light m-1"
+                    class="btn btn-main m-1"
                     target="_blank"
                     >CHECK QUERIES</a
                   >
                   <a
                     href="https://drive.google.com/file/d/1sqSJBp8vOC8xqGZjjXoQ8IZrrl4C8UT5/view"
-                    class="btn btn-light m-1"
+                    class="btn btn-main m-1"
                     target="_blank"
                     >CHECK VISUALIZATION</a
                   >
@@ -156,11 +153,9 @@
         </section>
         <section id="education">
           <div class="row my-4">
-            <nav class="navbar my-3" style="background-color: #e3f2fd">
-              <div class="container-fluid">
-                <span class="navbar-brand mb-0 h1">Education</span>
-              </div>
-            </nav>
+            <div class="section-heading">
+              <h2 class="section-title">Education</h2>
+            </div>
             <div class="col-md-6">
               <div class="card mb-3">
                 <div class="row g-0">
@@ -217,11 +212,10 @@
         </section>
         <section class="experience">
           <div class="row my-4">
-            <nav class="navbar my-3" style="background-color: #e3f2fd">
-              <div class="container-fluid">
-                <span class="navbar-brand mb-0 h1">Experience</span>
-              </div>
-            </nav>
+            <div class="section-heading">
+              <h2 class="section-title">Experience</h2>
+            </div>
+
             <div class="col-md-6">
               <div class="card mb-3">
                 <div class="row g-0">
@@ -286,15 +280,13 @@
         </section>
         <section id="contact">
           <div class="row mt-4">
-            <nav class="navbar my-3" style="background-color: #e3f2fd">
-              <div class="container-fluid">
-                <span class="navbar-brand mb-0 h1">Contact Me</span>
-              </div>
-            </nav>
+            <div class="section-heading">
+              <h2 class="section-title">Contact Me</h2>
+            </div>
             <div class="col-md-6">
-              <div class="card">
+              <div class="card my-2">
                 <div class="card-body">
-                  <h2>Contact Form</h2>
+                  <h5>Contact Form</h5>
                   <form action="https://formspree.io/f/xdovdeal" method="post">
                     <div class="mb-3">
                       <label for="name" class="form-label">Name:</label>
@@ -327,34 +319,42 @@
                       ></textarea>
                     </div>
                     <button type="reset" class="btn btn-warning">Reset</button>
-                    <button type="submit" class="btn btn-success">
-                      Submit
-                    </button>
+                    <button type="submit" class="btn btn-main">Submit</button>
                   </form>
                 </div>
               </div>
             </div>
 
             <div class="col-md-6">
-              <div class="card mb-4">
+              <div class="card my-2">
                 <div class="card-body">
-                  <h2 class="card-title mb-4">Contact Information</h2>
+                  <h5 class="card-title mb-4">Contact Information</h5>
                   <ul class="list-unstyled">
                     <li>
                       <i class="bi bi-envelope-fill me-2 text-primary"></i>
                       <span class="text-secondary">Email:</span>
-                      sauravkumar329@gmail.com
+                      <a href="mailto: sauravkumar329@gmail.com"
+                        >sauravkumar329@gmail.com</a
+                      >
                     </li>
-                    <li>
-                      <i class="bi bi-telephone-fill me-2 text-primary"></i>
-                      <span class="text-secondary">Phone:</span> 503 688 3191
-                    </li>
+
                     <li>
                       <i class="bi bi-geo-alt-fill me-2 text-primary"></i>
-                      <span class="text-secondary">Address:</span> 6616 NE
-                      Karlson Ct Hillsboro, OR
+                      <span class="text-secondary">Address:</span>
+                      <a href="https://goo.gl/maps/KKfp4W4dJgVZiKN28"
+                        >6616 NE Karlson Ct Hillsboro, OR</a
+                      >
                     </li>
                   </ul>
+                </div>
+              </div>
+              <div class="card my-2">
+                <div class="card-body">
+                  <h5 class="card-title">Meet with Me</h5>
+
+                  <a id="scheduling-button" class="btn btn-main"
+                    >Schedule Meeting</a
+                  >
                 </div>
               </div>
             </div>
