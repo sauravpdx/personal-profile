@@ -1,20 +1,13 @@
+body {
+  padding-top: 50px;
+}
+
 .text-justify {
   text-align: justify;
 }
 
-body {
-  padding-top: 50px;
-}
-/* Default width for all devices */
 main {
   width: 75%;
-}
-
-/* Width for small devices */
-@media (max-width: 576px) {
-  main {
-    width: 95%;
-  }
 }
 
 .about-img {
@@ -24,49 +17,79 @@ main {
   width: 100%;
   margin: 0 auto;
 }
+
 .section-heading {
-  background: linear-gradient(to right, #4568dc, #b06ab3);
+  background: var(--primary);
   padding: 10px 20px;
   border-radius: 5px;
   margin-bottom: 20px;
 }
 
-.section-title {
+.section-title,
+.card-title {
   margin: 0;
-  font-size: 26px;
-  color: white;
+  font-weight: 500;
   text-align: center;
 }
 
-.btn-main {
-  background: linear-gradient(to right, #02aab0, #00cdac);
-  color: white;
-  border: none;
+.section-title {
+  font-size: 26px;
+  color: var(--white);
 }
 
-.btn-main:hover {
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-  color: white;
+.btn-main,
+.btn-warning {
+  color: var(--white);
+  border: none;
+  background: var(--primary);
 }
 
 .btn-warning {
-  background: linear-gradient(to right, #ff5f6d, #ffc371);
-  color: white;
-  border: none;
+  background: var(--warning);
 }
 
+.btn-main:hover,
 .btn-warning:hover {
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-  color: white;
+  color: var(--white);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .icon-box {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #000;
+  border: 1px solid var(--black);
   padding: 10px;
   height: 2rem;
   width: 2rem;
   border-radius: 5px;
+}
+
+.nav-footer-background,
+.card-title-background {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.card-title {
+  font-size: 20px;
+  text-align: left;
+}
+
+.about-initial,
+.social-icons {
+  font-size: 24px;
+}
+
+.tata-steel-logo {
+  height: 8rem;
+}
+.innovant-logo {
+  height: 3rem;
+}
+
+@media (max-width: 576px) {
+  main {
+    width: 95%;
+  }
 }

@@ -1,0 +1,7 @@
+:root {
+  --primary: linear-gradient(to right, #4568dc, #b06ab3);
+  --warning: linear-gradient(to right, #ff5f6d, #ffc371);
+
+  --white: white;
+  --black: black;
+}
