@@ -11,8 +11,8 @@ const educationData = [
     schoolWebsite: "https://www.pdx.edu/",
     degree: "Master's of Science",
     fieldOfStudy: "Computer Science",
-    startDate: "Sep - 2022",
-    endDate: "Mar - 2024",
+    startDate: "Sep 2022",
+    endDate: "Mar 2024",
     iconSrc: "./assets/pdx-logo.png",
   },
   {
@@ -20,8 +20,8 @@ const educationData = [
     schoolWebsite: "https://www.pdx.edu/",
     degree: "Bachelor's of Technology",
     fieldOfStudy: "Computer Science",
-    startDate: "Aug - 2016",
-    endDate: "May - 2020",
+    startDate: "Aug 2016",
+    endDate: "May 2020",
     iconSrc: "./assets/BIT-Sindri-logo.png",
   },
 ];
