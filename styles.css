@@ -88,6 +88,7 @@ main {
   height: 3rem;
 }
 
+/* Changing width of vaious devices */
 @media (max-width: 576px) {
   main {
     width: 95%;
